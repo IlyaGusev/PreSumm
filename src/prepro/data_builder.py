@@ -207,7 +207,7 @@ def hashhex(s):
 class BertData():
     def __init__(self, args):
         self.args = args
-        self.tokenizer = BertTokenizer.from_pretrained(BERT_PATH, do_lower_case=True)
+        self.tokenizer = BertTokenizer.from_pretrained(BERT_PATH, do_lower_case=False)
 
         self.sep_token = '[SEP]'
         self.cls_token = '[CLS]'
